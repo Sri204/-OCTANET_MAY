@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#task-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#task-form input[type="text"],
+#task-form input[type="date"],
+#task-form select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#task-form button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#task-form button:hover {
+    background-color: #45a049;
+}
+
+#task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-item {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.task-item.completed {
+    background-color: #e0e0e0;
+}
+
+.task-item span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.task-item .due-date {
+    color: #999;
+}
+
+.task-item .priority {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.task-item .low {
+    background-color: #ffcc80;
+    color: #333;
+}
+
+.task-item .medium {
+    background-color: #ffb74d;
+    color: #333;
+}
+
+.task-item .high {
+    background-color: #ff8a65;
+    color: #fff;
+}
+
+.task-item button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 5px;
+    background-color: transparent;
+    color: #777;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.task-item button:hover {
+    color: #333;
+}
